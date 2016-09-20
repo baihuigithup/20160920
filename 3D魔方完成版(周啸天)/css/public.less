@@ -1,0 +1,32 @@
+.center {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.transform-style(@value:preserve-3d) {
+  -webkit-transform-style: @value;
+  transform-style: @value;
+}
+
+.transform-origin(@x:center,@y:center,@z:0) {
+  -webkit-transform-origin: @arguments;
+  transform-origin: @arguments;
+}
+
+.transform(@value) {
+  -webkit-transform+_: @value;
+  transform+_: @value;
+}
+
+.animation(@name,@duration:1s,@time-function:linear,@delay:0s,@count:1,@fill-model:both) {
+  -webkit-animation: @arguments;
+  animation: @arguments;
+}
+
+.transition(@property: all,@duration: 1s,@time-function: linear,@delay: 0s) {
+  -webkit-transition: @arguments;
+  transition: @arguments;
+}

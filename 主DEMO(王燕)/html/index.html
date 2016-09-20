@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no" />
+    <meta name="wxm:timeline_title" content="珠峰培训">
+    <meta name="wxm:appmessage_title" content="珠峰培训">
+    <meta name="wxm:appmessage_desc" content="朋友，我们在北京等你！">
+
+    <!--&lt;!&ndash;分享缩略图，必须为绝对路径&ndash;&gt;-->
+    <!--<meta name="wxm:img_url" content="http://wximg.qq.com/wxp/moment/4kKIVVgZl/img/share.jpg">-->
+    <!--分享链接-->
+    <!--<meta name="wxm:link" content="http://wximg.qq.com/wxp/moment/4kKIVVgZl/html/index.html">-->
+    <title>珠峰培训</title>
+    <link rel="stylesheet" href="../css/style.css?r=29" />
+    <link rel="stylesheet" href="../css/swiper.min.css"/>
+</head>
+
+
+<body>
+<div class="loading">
+    <div class="loading_bg"><img src="../img/loading_bg.jpg"></div>
+    <div class="loading_icon"></div>
+    <div class="loading_progress">
+        <div class="lp_bg"></div>
+        <div class="lp_left"><div class="lp_left_wrap"><div class="lp_left_circle"></div></div></div>
+        <div class="lp_right"><div class="lp_right_wrap"><div class="lp_right_circle"></div></div></div>
+    </div>
+    <div class="loading_text">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="loading_num"><span id="loading_num_txt">0</span>%</div>
+</div>
+<div class="wrapper">
+    <article class="pages" id="page1">
+        <img src="../img/page1_pic.jpg" width="640" />
+        <figure class="page1_btn"></figure>
+    </article>
+    <article class="pages" id="page2">
+        <div class="whpic">
+            <img src="../img/wh1.jpg"/>
+            <img src="../img/wh2.jpg"/>
+            <img src="../img/wh3.jpg"/>
+            <img src="../img/wh4.jpg"/>
+            <img src="../img/wh5.jpg"/>
+            <img src="../img/wh6.jpg"/>
+        </div>
+        <div class="page2_video"></div>
+        <div class="page2_ganrao"></div>
+    </article>
+    <audio src="../img/call.mp3" preload="preload" id="call" loop ></audio>
+    <audio src="../img/wh_3s.mp3" preload="preload" id="whsay" ></audio>
+    <audio src="../img/zzs.mp3" preload="preload" id="zzs" ></audio>
+    <article class="unlock_page">
+        <div class="unlock_info">
+            <div class="weixin_wrap"></div>
+            <div class="weixin_msg"><img src="../img/weixin_msg.png"></div>
+            <div class="unlock_time">
+                <span></span><span></span><span></span><span></span>
+                <em></em>
+            </div>
+            <div class="unlock_date">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="unlock_tips_wrap"><div class="unlock_tips"></div></div>
+            <div class="unlock_bar"></div>
+        </div>
+    </article>
+    <article class="weichat">
+        <div class="wx_wrap">
+            <div class="wx_box">
+                <div class="wx_msg">
+                    <section class="wh_msg_1"> <div class="wh_headimg"></div><div class="wh_msg_item_1"></div></section>
+                    <section class="wh_msg_2"><div class="wh_headimg"></div><div class="wh_msg_item_2"></div></section>
+                    <section class="wh_msg_3"><div class="wh_headimg"></div><div class="wh_msg_item_3"></div></section>
+                    <section class="user_msg_1"><div class="user_headimg"></div><div class="user_msg_item_1"></div></section>
+                    <section class="wh_msg_4"><div class="wh_headimg"></div><div class="wh_msg_item_4"></div></section>
+                    <section class="wh_msg_5"><div class="wh_headimg"></div><div class="wh_msg_item_5"></div><div id="WxMomentVideo" class="video_con"></div></section>
+                    <section class="user_msg_2"><div class="user_headimg"></div><div class="user_msg_item_2"></div></section>
+                    <section class="wh_msg_6"><div class="wh_headimg"></div><div class="wh_msg_item_6" id="wh_msg_item_6"></div></section>
+                </div>
+            </div>
+            <div class="wx_input_bar"></div>
+            <div class="wx_keyboard">
+                <span id="kb_text_1"></span>
+                <span id="kb_text_2"></span>
+                <div class="btn_send"></div>
+                <!-- <div class="btn_send_disabled"></div> -->
+            </div>
+        </div>
+    </article>
+    <article id="cube">
+        <ul id="cubeBox">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div id="cubeTip"></div>
+        <div id="cubeShare"></div>
+        <div id="cubeShareMark"><img src="../img/cubeShareMark.png"></div>
+    </article>
+    <article class="swiper-container" id="details">
+        <div class="swiper-wrapper" id="detailsList">
+            <div class="swiper-slide">
+                <div class="detailsImg">
+                    <img src="../img/detailsCanvas1.png">
+                    <canvas width="510" height="423"></canvas>
+                </div>
+                <div class="detailsText"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="detailsImg">
+                    <img src="../img/detailsCanvas2.png">
+                    <canvas width="374" height="374"></canvas>
+                </div>
+                <div class="detailsText"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="detailsImg">
+                    <img src="../img/detailsCanvas3.png">
+                    <canvas width="386" height="336"></canvas>
+                </div>
+                <div class="detailsText"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="detailsImg">
+                    <img src="../img/detailsCanvas4.png">
+                    <canvas width="259" height="306"></canvas>
+                </div>
+                <div class="detailsText"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="detailsImg">
+                    <img src="../img/detailsCanvas5.png">
+                    <canvas width="221" height="284"></canvas>
+                </div>
+                <div class="detailsText"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="detailsImg">
+                    <img src="../img/detailsCanvas6.png">
+                    <canvas width="478" height="419"></canvas>
+                </div>
+                <div class="detailsText"></div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+        <div id="detailsReturn"></div>
+    </article>
+</div>
+</body>
+</html>
+
+<!--<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
+<!--<script src="http://cdnjs.gtimg.com/cdnjs/libs/wxmoment/0.0.2-rc1/wxmoment.min.js"></script>-->
+
+<!--<script src="../js/jWeixin.js"></script>-->
+<script src="../js/wexmonent.js"></script>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/swiper.min.js"></script>
+
